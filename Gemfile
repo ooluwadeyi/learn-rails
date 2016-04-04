@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.0'
 
 # learn-rails
 gem 'activerecord-tableless'
-gem 'compass-rails', '~> 2.0.alpha.0'
+#gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'figaro'
 gem 'gibbon'
 gem 'google_drive'
