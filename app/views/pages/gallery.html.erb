@@ -1,0 +1,62 @@
+<% content_for :title do %>Gallery<% end %>
+
+<h3> Charis Photo Gallery</h3>
+<head>
+
+ <%= javascript_include_tag "vendor/custom.modernizr" %>
+ <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+ 
+
+ </head>
+
+ <body>
+
+
+<div class="small-9 medium-2 large-3 columns">
+       <p> <div class="slideshow-wrapper">
+      <div class="preloader"></div>
+
+<ul data-orbit data-options="timer_speed:3000;pause_on_hover: false;navigation_arrows:false;slide_number:false;"> 
+
+
+
+            <li><%= image_tag "charis_1.jpg"%>
+                  <div class="orbit-caption">Happy Charis</div></li>
+            <li><%= image_tag "charis_clap.jpg" %>
+                  <div class="orbit-caption">clapping Charis</div></li>
+            <li><%= image_tag "charis_look.jpg" %>
+                  <div class="orbit-caption">Focused Charis</div></li>
+            <li><%= image_tag "charis_pout.jpg" %>
+                  <div class="orbit-caption">Funny Charis</div></li>
+            <li><%= image_tag "charis_pout2.jpg" %></li>
+            <li><%= image_tag "charis_smile.jpg" %>
+                  <div class="orbit-caption">Smiling Charis</div></li>
+
+                  </ul>
+ 
+ 		
+ <p class="text-center">Click<a href="#" data-reveal-id="orbitModal">here</a> to see more of Charis pictures</p>
+ </div>
+
+ 
+
+<div id="orbitModal" class="reveal-modal">
+      <ul data-orbit data-options="timer_speed:3000;pause_on_hover: false;navigation_arrows:false;slide_number:false;">	
+
+      <li><%= image_tag "charis_1.jpg"%>
+ 			</li>
+ 		<li><%= image_tag "charis_clap.jpg" %>
+ 			</li>
+ 		<li><%= image_tag "charis_look.jpg" %>
+ 			</li>
+ 		<li><%= image_tag "charis_pout.jpg" %>
+ 			</li>
+ 		<li><%= image_tag "charis_pout2.jpg" %></li>
+ 		<li><%= image_tag "charis_smile.jpg" %>
+ 			</li>
+
+ 			</ul>
+ 			<a class="close-reveal-modal">&#215;</a>
+
+</div>
+</body>

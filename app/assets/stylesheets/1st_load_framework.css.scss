@@ -19,30 +19,57 @@
 @mixin six-columns-centered {
   @extend .small-6;
   @extend .columns;
-  @extend .text-center;
+  @extend .text-right;
   }
 // create your own classes
 // to make views framework-neutral
 .column {
-  @include six-columns-centered;
+  float:right;
   }
 .form {
   @include grid-column(6);
   }
 .form-centered {
-  @include six-columns-centered;
+  
+  float:right;
   }
 .submit {
   @extend .button;
   @extend .radius;
+
   }
 // apply styles to HTML elements
 // to make views framework-neutral
+
+body {
+  
+  background-image:url('photo-2a.jpeg') 
+}
+
 main {
   @include twelve-columns;
-  background-color: #eee;
+  
   }
 section {
   @extend .row;
   margin-top: 20px;
+  
   }
+
+footer {
+    font-size:0.8em;
+  @extend .text-center;
+  @extend .columns;
+  @extend .small-12;
+  position:fixed;
+  bottom:0;  
+
+}
+
+.gallery  {  
+
+@extend .columns;
+@extend .small-3;
+margin-top: 20px;
+
+}

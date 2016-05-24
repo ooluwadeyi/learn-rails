@@ -1,4 +1,22 @@
-<h3> Home </h3>
-<p> Welcome to the home of <%= @owner.name %>.</p>
-<p> I was born on <%= @owner.birthdate %> </p>
-<p> Only <%= @owner.countdown %> days untill my birthday! </p>
+<% content_for :title do %>Charis Olasunkanmi<% end %>
+<% content_for :description do %>Website fo Charis Olasunkanmi<% end %>
+<div class="gallery">
+	<%= image_tag "bold_charis.jpg" %>
+</div>
+<section>	
+	<div class="column">
+		<p> You are Welcome to our website. We Promise every second spent here will keep you yearning for more. </p>
+	</div>
+	<div class="column">
+		<div class="form-centered">
+			<%= simple_form_for @visitor do |f| %>
+				<%= f.error_notification %>
+				<%= f.input :email, label: false, :placeholder => 'Your email address' %> 
+				</br>
+				<%= f.button :submit, "Sign up for the newsletter", :class => "Submit" %> 		
+			<% end %>
+		</div>
+	</div>
+</section>		
+
+
